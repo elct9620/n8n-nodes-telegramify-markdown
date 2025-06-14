@@ -7,10 +7,11 @@ import type {
 import { NodeConnectionType, NodeOperationError } from 'n8n-workflow';
 import telegramifyMarkdown from 'telegramify-markdown';
 
-export class ExampleNode implements INodeType {
+export class TelegramifyMarkdown implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Telegramify Markdown',
 		name: 'telegramifyMarkdown',
+		icon: 'file:telegram.svg',
 		group: ['transform'],
 		version: 1,
 		description: 'Convert Markdown to Telegram Markdown',
@@ -21,8 +22,6 @@ export class ExampleNode implements INodeType {
 		outputs: [NodeConnectionType.Main],
 		usableAsTool: true,
 		properties: [
-			// Node properties which the user gets displayed and
-			// can change on the node.
 			{
 				displayName: 'Markdown Text',
 				name: 'markdownText',
