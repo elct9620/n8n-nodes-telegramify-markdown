@@ -1,18 +1,17 @@
 # n8n-nodes-telegramify-markdown
 
-This is an n8n community node. It lets you use _app/service name_ in your n8n workflows.
+This is an n8n community node. It lets you convert standard Markdown to Telegram Markdown format in your n8n workflows.
 
-_App/service name_ is _one or two sentences describing the service this node integrates with_.
+Telegramify Markdown helps format your text for Telegram's specific markdown syntax, making your messages display correctly when sent through Telegram's API.
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
 
-[Installation](#installation)
-[Operations](#operations)
-[Credentials](#credentials)  <!-- delete if no auth needed -->
-[Compatibility](#compatibility)
-[Usage](#usage)  <!-- delete if not using this section -->
-[Resources](#resources)
-[Version history](#version-history)  <!-- delete if not using this section -->
+- [Installation](#installation)
+- [Operations](#operations)
+- [Compatibility](#compatibility)
+- [Usage](#usage)
+- [Resources](#resources)
+- [Version history](#version-history)
 
 ## Installation
 
@@ -20,28 +19,35 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 ## Operations
 
-_List the operations supported by your node._
+The Telegramify Markdown node supports the following operations:
 
-## Credentials
+- **Convert Markdown to Telegram Markdown** - Transforms standard Markdown into Telegram's supported markdown format
 
-_If users need to authenticate with the app/service, provide details here. You should include prerequisites (such as signing up with the service), available authentication methods, and how to set them up._
+You can configure how to handle unsupported tags with the following options:
+- **Escape** - Escapes unsupported Markdown tags (default)
+- **Remove** - Removes unsupported tags from the output
+- **Keep** - Keeps unsupported tags as they appear in the original text
 
 ## Compatibility
 
-_State the minimum n8n version, as well as which versions you test against. You can also include any known version incompatibility issues._
+This node requires n8n version 20.15 or later.
 
 ## Usage
 
-_This is an optional section. Use it to help users with any difficult or confusing aspects of the node._
+This node is particularly useful when preparing text to be sent via the Telegram node in n8n. Telegram uses a specific subset of Markdown, and this node ensures your formatting will display correctly.
 
-_By the time users are looking for community nodes, they probably already know n8n basics. But if you expect new users, you can link to the [Try it out](https://docs.n8n.io/try-it-out/) documentation to help them get started._
+1. Add the Telegramify Markdown node to your workflow
+2. Enter your Markdown text or connect it from a previous node
+3. Select your preferred strategy for handling unsupported tags
+4. Connect the output to a Telegram node or other destination
 
 ## Resources
 
-* [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
-* _Link to app/service documentation._
+* [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
+* [telegramify-markdown package documentation](https://www.npmjs.com/package/telegramify-markdown)
+* [Telegram Bot API formatting documentation](https://core.telegram.org/bots/api#formatting-options)
 
 ## Version history
 
-_This is another optional section. If your node has multiple versions, include a short description of available versions and what changed, as well as any compatibility impact._
+- 0.1.3: Current release
 
