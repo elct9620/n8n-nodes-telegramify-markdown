@@ -4,12 +4,12 @@
 	"description": "Convert Markdown to Telegram Markdown format",
 	"main": "index.js",
 	"scripts": {
-		"build": "npx rimraf dist && tsc",
+		"build": "rimraf dist && tsc",
 		"dev": "tsc --watch",
 		"format": "prettier nodes --write",
 		"lint": "eslint nodes package.json",
 		"lintfix": "eslint nodes package.json --fix",
-		"prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes package.json"
+		"prepublish": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes package.json"
 	},
 	"files": [
 		"dist"
@@ -37,6 +37,7 @@
 		"eslint": "^8.57.0",
 		"eslint-plugin-n8n-nodes-base": "^1.16.3",
 		"prettier": "^3.5.3",
+		"rimraf": "^6.0.1",
 		"typescript": "^5.8.2"
 	},
 	"peerDependencies": {
