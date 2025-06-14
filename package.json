@@ -1,6 +1,6 @@
 {
 	"name": "@aotoki/n8n-nodes-telegramify-markdown",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Convert Markdown to Telegram Markdown format",
 	"main": "index.js",
 	"scripts": {
