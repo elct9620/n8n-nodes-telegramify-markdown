@@ -46,8 +46,3 @@ This node is particularly useful when preparing text to be sent via the Telegram
 * [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
 * [telegramify-markdown package documentation](https://www.npmjs.com/package/telegramify-markdown)
 * [Telegram Bot API formatting documentation](https://core.telegram.org/bots/api#formatting-options)
-
-## Version history
-
-- 0.1.3: Current release
-
