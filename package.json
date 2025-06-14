@@ -11,6 +11,10 @@
 		"lintfix": "eslint nodes package.json --fix",
 		"prepublish": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes package.json"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/elct9620/n8n-nodes-telegramify-markdown"
+	},
 	"files": [
 		"dist"
 	],
