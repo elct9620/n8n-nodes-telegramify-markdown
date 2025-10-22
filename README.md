@@ -15,7 +15,15 @@ Telegramify Markdown helps format your text for Telegram's specific markdown syn
 
 ## Installation
 
-Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
+Click on your user initials in the bottom left, then Settings > Community Nodes
+
+Click on the "Install" button and enter
+```
+n8n-nodes-telegramify-markdown
+```
+as the npm package name, then confirm your installation.
+
+For more information, check out the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
 
 ## Operations
 
