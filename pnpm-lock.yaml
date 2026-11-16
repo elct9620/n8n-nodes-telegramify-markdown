@@ -13,7 +13,7 @@ importers:
         version: 1.82.0
       telegramify-markdown:
         specifier: ^1.3.0
-        version: 1.3.3
+        version: 1.3.4
     devDependencies:
       '@typescript-eslint/parser':
         specifier: ~8.70.0
@@ -1395,8 +1395,8 @@ packages:
   teex@1.0.1:
     resolution: {integrity: sha512-eYE6iEI62Ni1H8oIa7KlDU6uQBtqr4Eajni3wX7rpfXD8ysFx8z0+dri+KWEPWpBsxXfxu58x/0jvTVT1ekOSg==}
 
-  telegramify-markdown@1.3.3:
-    resolution: {integrity: sha512-cyMqOrXFJfKzOrrUc1JlnfRwvC7HR+DzzlUItQs+I9bGTO9TSyvpgt27UQ9YXm2sXb3ltzBvvAq/IEWqdk6xkg==}
+  telegramify-markdown@1.3.4:
+    resolution: {integrity: sha512-pBN0G2nfrfJj/V10IpOwMJU0DHbTzfX1SC5JzQirY3YFrz7X6aFct39NzV2txJ8NyTo04xbW9aQZiSAiUgqkMw==}
 
   text-decoder@1.2.3:
     resolution: {integrity: sha512-3/o9z3X0X0fTupwsYvR03pJ/DjWuqqrfwBgTQzdWDiQSm9KitAyz/9WqsT2JQW7KV2m+bC2ol/zqpW37NHxLaA==}
@@ -3123,7 +3123,7 @@ snapshots:
     dependencies:
       streamx: 2.22.1
 
-  telegramify-markdown@1.3.3:
+  telegramify-markdown@1.3.4:
     dependencies:
       mdast-util-gfm-table: 0.1.6
       mdast-util-to-markdown: 0.6.5
